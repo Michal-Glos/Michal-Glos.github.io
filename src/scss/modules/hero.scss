@@ -1,16 +1,17 @@
 .hero {
-    padding: 74px 16px 56px;
+    padding: 74px 16px 0;
 
     &__contact {
         border-radius: 64px;
         color: #FFF;
-        background: $linkBlue;
+        background: $blueLight;
         display: inline-block;
         padding: 4px 24px;
         font-weight: bold;
         font-size: 20px;
         line-height: 40px;
         text-decoration: none;
+        margin-bottom: 56px;
     }
 
     &__description {
@@ -33,7 +34,7 @@
         box-sizing: content-box;
         width: 96px;
         height: 96px;
-        border: 16px solid $blueLight;
+        border: 16px solid $greyBlue;
         border-radius: 50%;
     }
 
@@ -47,7 +48,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 32px;
-        color: $linkBlue;
+        color: $blueLight;
         text-decoration: none;
 
     }
@@ -61,6 +62,6 @@
     }
 
     &__special {
-        color: $specialBlue ;
+        color: $normalBlue ;
     }
 }
