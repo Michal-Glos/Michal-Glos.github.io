@@ -2,8 +2,12 @@
     padding: 74px 16px 0;
 
     @media (min-width: $tablet) {
-        max-width: 768px;
+        max-width: 786px;
         margin: 0 auto;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 100%;
     }
 
     &__bubble {
@@ -27,6 +31,34 @@
 
     &__description {
         text-align: center;
+
+        @media (min-width: $desktop) {
+            max-width: 786px;
+            margin: 0 auto;
+            position: relative;
+
+            &::before,
+            &::after {
+                width: 82.94px;
+                height: 254.88px;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+
+            }
+
+            &::before {
+                background: url('../assets/img/hero_left.svg');
+                right:100%;
+            }
+
+            &::after {
+                background: url('../assets/img/hero_right.svg');
+                left:100%;
+            }
+
+        }
     }
 
     &__header {
@@ -38,8 +70,8 @@
 
         @media (min-width: $desktop) {
             font-weight: 700;
-font-size: 32px;
-line-height: 40px;
+            font-size: 32px;
+            line-height: 40px;
         }
     }
 
@@ -101,10 +133,10 @@ line-height: 40px;
 
         @media (min-width: $desktop) {
             font-weight: 700;
-    font-size: 20px;
-    line-height: 40px; 
-    text-decoration:underline;
-            }
+            font-size: 20px;
+            line-height: 40px;
+            text-decoration: underline;
+        }
 
     }
 
@@ -114,15 +146,16 @@ line-height: 40px;
         line-height: 32px;
         color: $textDefault;
         margin-bottom: 48px;
+
         @media (min-width: $desktop) {
-        font-weight: 300;
-font-size: 20px;
-line-height: 40px; 
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 40px;
         }
     }
 
     &__special {
         color: $normalBlue ;
-        
+        white-space: nowrap;
     }
 }
