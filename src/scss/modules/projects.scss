@@ -1,5 +1,8 @@
 .projects {
     padding: 64px 16px 88px;
+    @media (min-width: $desktop) {
+        padding: 64px 16px 176px;
+    }
 
     &__description {
         font-weight: 300;
@@ -7,7 +10,15 @@
         line-height: 32px;
         text-align: center;
         color: $textDefault;
-        margin-bottom: 46px;
+        margin: 0 auto 46px;
+
+        @media (min-width: $desktop) {
+            max-width: 786px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 128px;
+        }
     }
 
     &__header {
@@ -16,6 +27,12 @@
         line-height: 48px;
         color: $textDark;
         text-align: center;
+        margin: 0 0 40px;
+        @media (min-width: $desktop) {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+        }
     }
 
 }
@@ -31,6 +48,9 @@
     line-height: 24px;
     overflow: hidden;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    @media (min-width: $desktop) {
+        font-size: 16px;
+    }
 
     &__circle {
         display: block;
@@ -43,12 +63,22 @@
 
     &__content {
         padding: 24px 16px;
+        @media (min-width: $desktop) {
+            padding: 18px 48px 58px;
+        }
     }
 
     &__grid {
         display: grid;
         grid-template-columns: 102px 1fr;
         column-gap: 8px;
+        margin: 0 0 8px 0;
+        @media (min-width: $desktop) {
+            grid-template-columns: 116px 1fr;
+        }
+        &--description {
+            margin-bottom: 24px;
+        }
     }
 
     &__label {
@@ -58,6 +88,7 @@
         font-weight: normal;
 
     }
+
     &__link {
         color: $linkConsole;
     }
@@ -68,6 +99,10 @@
         font-size: 13px;
         line-height: 24px;
         color: #fff;
+        margin-top: 24px;
+        @media (min-width: $desktop) {
+            font-size: 16px;
+        }
 
 
     }
@@ -87,6 +122,9 @@
     display: grid;
     column-gap: 24px;
     row-gap: 24px;
+    max-width: 1184px;
+    margin: 0 auto;
+
     @media (min-width: $tablet) {
         grid-template-columns: 1fr 1fr;
     }
