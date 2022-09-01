@@ -1,10 +1,15 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://Michal-Glos.github.io/og.gif)
 
-# WTF Webpack Starter Kit 
+# Michał Głos - JUNIOR FRONTEND DEVELOPER
 
 Simple toolkit for your static websites development.
 
-## How to use it?
+## TOOLS
+
+- WTF Webpack starterkit
+- HTML + CSS + JS
+- CSS Grid
+- Github API
 
 Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
 
