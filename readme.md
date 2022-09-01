@@ -1,4 +1,4 @@
-![cover](https://Michal-Glos.github.io/og.gif)
+![cover](https://Michal-Glos.github.io/og.png)
 
 # Michał Głos - JUNIOR FRONTEND DEVELOPER
 
