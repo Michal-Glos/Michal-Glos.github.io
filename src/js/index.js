@@ -8,7 +8,7 @@ fetch('https://api.github.com/users/michal-glos/repos?sort=created&direction=asc
         const container = document.querySelector('.projects__grid--js');
         for (let repo of res) {
             console.log(repo);
-            const { description, homepage, html_url, name } = repo;
+            const {description, homepage, html_url, name } = repo;
 
             const template = `          <article class="project">
     <div class="project__window">
@@ -22,16 +22,21 @@ fetch('https://api.github.com/users/michal-glos/repos?sort=created&direction=asc
     <p class="project__grid project__grid--description">
       <span class="project__label">description:</span><span>${description}</span>
     </p>
-    <p class="project__grid"><span  class="project__label">demo:</span>
-      <span>
-        &lt;<a
-        target="_blank"
-        class="project__link"
-        rel="noopener noreferrer"
-        href="${homepage}"
-        title="${name} - demo">see_here</a>&gt;
-      </span>
-    </p>
+          `;
+          if (homepage) {
+            template +=     `<p class="project__grid"><span  class="project__label">demo:</span>
+            <span>
+              &lt;<a
+              target="_blank"
+              class="project__link"
+              rel="noopener noreferrer"
+              href="${homepage}"
+              title="${name} - demo">see_here</a>&gt;
+            </span>
+          </p>`
+          }
+    
+    template += `
     <p class="project__grid"><span class="project__label">github:</span>
         <span>
           &lt;<a 
